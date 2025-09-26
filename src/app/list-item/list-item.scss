@@ -1,0 +1,36 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/fonts" as *;
+@use "../../styles/abstracts/mixins" as *;
+@use "../../styles/abstracts/spacings" as *;
+
+.list-item {
+  padding: $spacing-300 0;
+  border-bottom: 1px solid $purple-100;
+  &__container {
+    @include flex-between($spacing-400);
+    align-items: center;
+    &-title {
+      padding: $spacing-300 0;
+      @include font(
+        $fs-large,
+        1.313rem,
+        normal,
+        $purple-950,
+        $ff-work-sans,
+        600
+      );
+    }
+    &-btn {
+      @include button-reset;
+    }
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__checked {
+    display: block;
+    @include font($fs-base, 1.313rem, normal, $purple-600, $ff-work-sans, 400);
+  }
+}

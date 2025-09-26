@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@use "./styles/base/index";
+@use "./styles/abstracts";
+
+body {
+  background-color: #f8eeff;
+  position: relative;
+  width: 100%;
+}

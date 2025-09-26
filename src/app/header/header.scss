@@ -1,0 +1,10 @@
+@use "../../styles/abstracts/colors" as *;
+@use "../../styles/abstracts/fonts" as *;
+
+.header {
+  height: 32vh;
+  background-image: url("../../../public/assets/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
